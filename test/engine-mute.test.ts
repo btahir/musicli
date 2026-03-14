@@ -1,9 +1,7 @@
 import assert from 'node:assert/strict';
-import { join } from 'node:path';
 import test from 'node:test';
 import { AudioEngine } from '../src/audio/engine.js';
 import { defaultMixerState } from '../src/audio/mixer.js';
-import { SOUNDS_DIR } from '../src/runtime/paths.js';
 
 test('mute preserves the saved mix and allows edits while muted', () => {
   const mixer = defaultMixerState();
@@ -37,7 +35,7 @@ test('mute preserves the saved mix and allows edits while muted', () => {
   engine.stop();
 });
 
-test('buildArgs includes ambient tracks without throwing', () => {
+test('source and ambience args stay separated', () => {
   const mixer = defaultMixerState();
   mixer.rain = 0.3;
 
@@ -46,12 +44,52 @@ test('buildArgs includes ambient tracks without throwing', () => {
     mixerState: mixer,
   });
 
-  const args = (engine as unknown as { buildArgs(): string[] }).buildArgs();
+  const sourceArgs = (engine as unknown as { buildSourceArgs(): string[] }).buildSourceArgs();
+  const ambientArgs = (engine as unknown as { buildAmbientArgs(key: 'rain'): string[] }).buildAmbientArgs('rain');
 
-  assert.ok(args.includes('-stream_loop'));
-  assert.ok(args.includes('-i'));
-  assert.ok(args.includes(join(SOUNDS_DIR, 'rain.mp3')));
-  assert.ok(args.some((arg) => arg.includes('amix=inputs=2')));
+  assert.ok(sourceArgs.includes('/tmp/example.mp3'));
+  assert.ok(!sourceArgs.includes('-stream_loop'));
+  assert.ok(ambientArgs.includes('-stream_loop'));
+  assert.ok(ambientArgs.some((arg) => arg.endsWith('/sounds/rain.mp3')));
+
+  engine.stop();
+});
+
+test('stream mixer updates do not restart the source process for volume-only changes', () => {
+  const mixer = defaultMixerState();
+  mixer.rain = 0.3;
+
+  const engine = new AudioEngine({
+    track: '/tmp/example.mp3',
+    mixerState: mixer,
+    url: 'https://example.com/stream.m3u8',
+  });
+
+  const internal = engine as unknown as {
+    stopped: boolean;
+    paused: boolean;
+    restartPlaybackGraph(): void;
+    syncAmbientPipelines(): void;
+  };
+  const calls: string[] = [];
+
+  internal.stopped = false;
+  internal.paused = false;
+  internal.restartPlaybackGraph = () => calls.push('source');
+  internal.syncAmbientPipelines = () => calls.push('ambience');
+
+  engine.updateMixer({
+    ...engine.getMixerState(),
+    music: 0.4,
+    rain: 0.5,
+  });
+  assert.deepEqual(calls, []);
+
+  engine.updateMixer({
+    ...engine.getMixerState(),
+    cafe: 0.2,
+  });
+  assert.deepEqual(calls, ['ambience']);
 
   engine.stop();
 });

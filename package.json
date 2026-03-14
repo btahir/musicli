@@ -1,6 +1,6 @@
 {
   "name": "@bilalpm/musicli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "your focus room in the terminal",
   "type": "module",
   "bin": {
