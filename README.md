@@ -6,7 +6,7 @@
 
 > Open your terminal. Set the mood. Stay in flow.
 >
-> `musicli` is a keyboard-first lofi player for local folders and stream URLs, with scene visuals, long-form ambience loops, and in-terminal search.
+> `musicli` is a keyboard-first music player for local folders and stream URLs, with scene visuals, long-form ambience loops, and in-terminal search.
 
 [Why Musicli](#why-musicli) · [Quick Start](#quick-start) · [Use It](#use-it) · [Controls](#controls) · [Presets](#presets) · [Library](#library) · [Development](#development)
 
@@ -159,7 +159,9 @@ Inside the app, press `o`, then `a`. On supported systems that opens a native fo
 
 ### Load Open Lo-fi
 
-[`Open Lo-fi`](https://github.com/btahir/open-lofi) is published separately.
+[`Open Lo-fi`](https://github.com/btahir/open-lofi) is a separate open music pack for Musicli, with `150+` lo-fi songs you can download and listen to locally.
+
+If you want a ready-made library instead of pointing Musicli at your own folder, this is the easiest local-first option.
 
 The simplest flow today is:
 
