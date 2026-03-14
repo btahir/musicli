@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "pack": "starter",
+  "title": "Vibefi Starter Pack",
+  "version": "0.1.0",
+  "generatedAt": "2026-03-14T03:09:02.129Z",
+  "description": "A curated one-track-per-category introduction to the full Vibefi library.",
+  "trackCount": 10,
+  "categories": [
+    {
+      "slug": "chillhop",
+      "label": "Chillhop & Cozy Beats",
+      "description": "Warm keys, city walks, golden-hour grooves, and mellow head-nodders.",
+      "trackCount": 1
+    },
+    {
+      "slug": "jazzhop",
+      "label": "Jazz Lounge & Bookstore Grooves",
+      "description": "Brushes, upright bass, late-night tables, bookstores, and smoky corners.",
+      "trackCount": 1
+    },
+    {
+      "slug": "ambient-lofi",
+      "label": "Ambient Drift & Dreamscapes",
+      "description": "Clouds, fog, underwater textures, cosmic loops, and meditative quiet.",
+      "trackCount": 1
+    },
+    {
+      "slug": "soul-rnb",
+      "label": "Soul, Slow Jams & Warm Rooms",
+      "description": "Romance, nostalgia, intimate rooms, slow dances, and after-hours reflection.",
+      "trackCount": 1
+    },
+    {
+      "slug": "asian-lofi",
+      "label": "Asian & Zen Lo-Fi",
+      "description": "Temple dawns, bamboo moonlight, lantern streets, and tea-house calm.",
+      "trackCount": 1
+    },
+    {
+      "slug": "funk-soul",
+      "label": "Funk, Soul & Retro Bounce",
+      "description": "Block parties, jukebox glow, roller rinks, basement grooves, and family warmth.",
+      "trackCount": 1
+    },
+    {
+      "slug": "seasonal-weather",
+      "label": "Seasons, Rain & Weather",
+      "description": "Spring blooms, winter hush, storms, sidewalk puddles, coastlines, and outdoor air.",
+      "trackCount": 1
+    },
+    {
+      "slug": "late-night",
+      "label": "Late Night, Neon & After Hours",
+      "description": "3 AM loops, neon reflections, rooftops, last calls, trains, and empty streets.",
+      "trackCount": 1
+    },
+    {
+      "slug": "activities",
+      "label": "Focus, Rituals & Daily Routines",
+      "description": "Study, coding, reading, cooking, painting, yoga, journaling, and mindful routines.",
+      "trackCount": 1
+    },
+    {
+      "slug": "hybrid",
+      "label": "Hybrid, World & Cinematic",
+      "description": "Bossa, synthwave, afrobeat, tropical sketches, and credits-roll atmospheres.",
+      "trackCount": 1
+    }
+  ],
+  "tracks": [
+    {
+      "title": "Sidewalk Slow Jam",
+      "slug": "sidewalk-slow-jam",
+      "category": "chillhop",
+      "categoryLabel": "Chillhop & Cozy Beats",
+      "file": "tracks/chillhop/sidewalk-slow-jam.mp3",
+      "sizeBytes": 3239286,
+      "sha256": "8116a8108b69d8706028a9fd1df7891e79f41ca567f4b77d4f3d9ff92068b3c8"
+    },
+    {
+      "title": "Last Call in C Minor",
+      "slug": "last-call-in-c-minor",
+      "category": "jazzhop",
+      "categoryLabel": "Jazz Lounge & Bookstore Grooves",
+      "file": "tracks/jazzhop/last-call-in-c-minor.mp3",
+      "sizeBytes": 3359478,
+      "sha256": "0208fc831aff462c51f0b1c06f05c2a5903cb6add311ac4276a18c8237f4c757"
+    },
+    {
+      "title": "Almost Floating",
+      "slug": "almost-floating",
+      "category": "ambient-lofi",
+      "categoryLabel": "Ambient Drift & Dreamscapes",
+      "file": "tracks/ambient-lofi/almost-floating.mp3",
+      "sizeBytes": 4530654,
+      "sha256": "0dc77845ad4986b2d37d5a23cf410b9d65bc2f029d5e36f2cd1c69ebd422971a"
+    },
+    {
+      "title": "Slow Dance in the Living Room",
+      "slug": "slow-dance-in-the-living-room",
+      "category": "soul-rnb",
+      "categoryLabel": "Soul, Slow Jams & Warm Rooms",
+      "file": "tracks/soul-rnb/slow-dance-in-the-living-room.mp3",
+      "sizeBytes": 2329350,
+      "sha256": "d888ec5d8360bd4cbeb96fcc59d4b972e5044c3b6c306e254c8ab3b8be2465c6"
+    },
+    {
+      "title": "Moon Through Bamboo",
+      "slug": "moon-through-bamboo",
+      "category": "asian-lofi",
+      "categoryLabel": "Asian & Zen Lo-Fi",
+      "file": "tracks/asian-lofi/moon-through-bamboo.mp3",
+      "sizeBytes": 3749958,
+      "sha256": "cd952244f9360c8508fa784c8fe934db7b0a00312741142b380f75818fa51643"
+    },
+    {
+      "title": "Roller Rink Reverie",
+      "slug": "roller-rink-reverie",
+      "category": "funk-soul",
+      "categoryLabel": "Funk, Soul & Retro Bounce",
+      "file": "tracks/funk-soul/roller-rink-reverie.mp3",
+      "sizeBytes": 2574342,
+      "sha256": "547f575ae085977a8ce8618adcf7750c51b4b89a3ae71ca9a8a149f8f60087ee"
+    },
+    {
+      "title": "Snow on the Needle",
+      "slug": "snow-on-the-needle",
+      "category": "seasonal-weather",
+      "categoryLabel": "Seasons, Rain & Weather",
+      "file": "tracks/seasonal-weather/snow-on-the-needle.mp3",
+      "sizeBytes": 2773518,
+      "sha256": "b663dfe93b4b2b1433c6ca62a02dc87d83480d9754edddb70288f94092b2f29a"
+    },
+    {
+      "title": "Electric Puddles",
+      "slug": "electric-puddles",
+      "category": "late-night",
+      "categoryLabel": "Late Night, Neon & After Hours",
+      "file": "tracks/late-night/electric-puddles.mp3",
+      "sizeBytes": 3152310,
+      "sha256": "07f3a39d940231dc036d245cd676917fc4544832dc0b78a59a66b9315d614d6c"
+    },
+    {
+      "title": "Stacks of Quiet Hours",
+      "slug": "stacks-of-quiet-hours",
+      "category": "activities",
+      "categoryLabel": "Focus, Rituals & Daily Routines",
+      "file": "tracks/activities/stacks-of-quiet-hours.mp3",
+      "sizeBytes": 3356910,
+      "sha256": "fde17d22455d1a38d926c0d1f77da86d1c01619ff7038a92d5addac338cf99c5"
+    },
+    {
+      "title": "Cafe Da Tarde",
+      "slug": "cafe-da-tarde",
+      "category": "hybrid",
+      "categoryLabel": "Hybrid, World & Cinematic",
+      "file": "tracks/hybrid/cafe-da-tarde.mp3",
+      "sizeBytes": 2640078,
+      "sha256": "b197f7a73480a2aafb0417dcee1a435a03eca942c29da4043c75da2f0952af54"
+    }
+  ]
+}

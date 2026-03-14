@@ -1,0 +1,17 @@
+{
+  "name": "starter",
+  "title": "Vibefi Starter Pack",
+  "description": "A curated one-track-per-category introduction to the full Vibefi library.",
+  "tracks": [
+    "sidewalk-slow-jam",
+    "last-call-in-c-minor",
+    "almost-floating",
+    "slow-dance-in-the-living-room",
+    "moon-through-bamboo",
+    "roller-rink-reverie",
+    "snow-on-the-needle",
+    "electric-puddles",
+    "stacks-of-quiet-hours",
+    "cafe-da-tarde"
+  ]
+}
