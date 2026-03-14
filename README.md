@@ -159,7 +159,7 @@ Inside the app, press `o`, then `a`. On supported systems that opens a native fo
 
 ### Load Open Lo-fi
 
-`Open Lo-fi` is published separately at `https://github.com/btahir/open-lofi`.
+[`Open Lo-fi`](https://github.com/btahir/open-lofi) is published separately.
 
 The simplest flow today is:
 

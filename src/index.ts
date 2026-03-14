@@ -1,4 +1,5 @@
 import { Command, InvalidOptionArgumentError, Option } from 'commander';
+import packageJson from '../package.json';
 import { checkFfmpeg, checkInteractiveTerminal } from './utils/check-deps.js';
 import { showSplash } from './ui/splash.js';
 import { startApp } from './app.js';
@@ -91,7 +92,7 @@ program
   .name('musicli')
   .description('your focus room in the terminal')
   .showHelpAfterError()
-  .version('0.1.0');
+  .version(packageJson.version);
 
 const libraryCommand = program.command('library').description('manage installable track libraries');
 
