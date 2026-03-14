@@ -1,4 +1,4 @@
-# vibefi
+# Vibe-Fi
 
 ### *your focus room in the terminal*
 
